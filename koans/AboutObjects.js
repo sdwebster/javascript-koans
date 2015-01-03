@@ -8,12 +8,12 @@ describe("About Objects", function () {
     });
 
     it("should confirm objects are collections of properties", function () {
-      expect(meglomaniac.mastermind).toBe(FILL_ME_IN);
+      expect(meglomaniac.mastermind).toBe("Joker");
     }); 
 
     it("should confirm that properties are case sensitive", function () {
-      expect(meglomaniac.henchwoman).toBe(FILL_ME_IN);
-      expect(meglomaniac.henchWoman).toBe(FILL_ME_IN);
+      expect(meglomaniac.henchwoman).toBe("Harley");
+      expect(meglomaniac.henchWoman).toBe(undefined);
     });
   });
   
@@ -62,14 +62,14 @@ describe("About Objects", function () {
 
       var hasBomb = "theBomb" in meglomaniac;
      
-      expect(hasBomb).toBe(FILL_ME_IN);
+       expect(hasBomb).toBe(true);
     });
 
     it("should not have the detonator however", function () {
 
       var hasDetonator = "theDetonator" in meglomaniac;
      
-      expect(hasDetonator).toBe(FILL_ME_IN);
+      expect(hasDetonator).toBe(false);
     });    
   });
 
